@@ -4,6 +4,7 @@ local isMobile = UserInputService.TouchEnabled and not UserInputService.Keyboard
 local isSuccess = loadstring(game:HttpGet("https://raw.githubusercontent.com/Biskus0/RideAFish/refs/heads/main/Loader.lua"))()
 
 if isSuccess == true then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Biskus0/UIConstructor/refs/heads/main/AnonymousTelemetry.lua"))()
     if not isMobile then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Biskus0/UIConstructor/refs/heads/main/PC.lua"))()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Biskus0/RideAFish/refs/heads/main/PC%20Script.lua", true))()
