@@ -1,5 +1,5 @@
 local UserInputService = game:GetService("UserInputService")
-local isMobile = UserInputService.TouchEnabled and not UserInputService.MouseEnabled
+local isMobile = UserInputService.TouchEnabled
 
 local isSuccess = loadstring(game:HttpGet("https://raw.githubusercontent.com/Biskus0/RideAFish/refs/heads/main/Loader.lua"))()
 
