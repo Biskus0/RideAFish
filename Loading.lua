@@ -1,3 +1,10 @@
+if _G.IsExecuting then return end
+_G.IsExecuting = true
+
+task.delay(3, function()
+    _G.IsExecuting = false
+end)
+
 local UserInputService = game:GetService("UserInputService")
 local isMobile = UserInputService.TouchEnabled
 
